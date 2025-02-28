@@ -44,4 +44,5 @@ def start_quiz(quiz_id):
     return jsonify({"error": "Quiz not approved or found"}), 404
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
+
